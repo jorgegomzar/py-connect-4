@@ -8,6 +8,7 @@ dependencies = [
     "ipdb>=0.13.13",
     "loguru>=0.7.3",
     "numpy>=2.0.2",
+    "pydantic>=2.11.7",
     "rich>=14.1.0",
 ]
 
