@@ -3,10 +3,17 @@ name = "connect-4"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 dependencies = [
     "ipdb>=0.13.13",
     "loguru>=0.7.3",
     "numpy>=2.0.2",
     "rich>=14.1.0",
 ]
+
+[project.scripts]
+connect-4 = "connect_4.main:main"
+
+[build-system]
+requires = ["uv_build>=0.8.6,<0.9.0"]
+build-backend = "uv_build"   
