@@ -1,6 +1,6 @@
 [project]
 name = "py-connect-4"
-version = "0.1.1"
+version = "0.1.2"
 description = "Play connect 4 in your terminal or online with your friends"
 readme = "README.md"
 authors = [

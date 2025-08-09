@@ -11,8 +11,8 @@ Connect4Cells = list[tuple[int, int]]
 
 CELL_DISPLAY_VALUES = {
     0: " ",
-    1: "🟠",
-    2: "🔵",
+    1: "🔴",
+    2: "🟡",
 }
 
 CONSOLE = Console()
