@@ -27,7 +27,7 @@ def main():
         s.listen()
         logger.info("Waiting for 2 players to connect...")
 
-        for player_idx in range(2):
+        for player_idx in [1, 2]:
             conn, addr = s.accept()
             logger.info(f"Player {player_idx} connected from {addr}")
             players[player_idx] = conn  # type: ignore
