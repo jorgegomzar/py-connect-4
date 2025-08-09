@@ -1,7 +1,7 @@
 import argparse
 from enum import Enum
 
-from connect_4 import local, online
+from py_connect_4 import local, online
 
 
 class Networking(str, Enum):

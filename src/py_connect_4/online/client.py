@@ -1,7 +1,7 @@
 import socket
 
-from connect_4.online.utils import HOST, PORT, GameState, recv, send
-from connect_4.utils import CELL_DISPLAY_VALUES, CONSOLE, print_board
+from py_connect_4.online.utils import HOST, PORT, GameState, recv, send
+from py_connect_4.utils import CELL_DISPLAY_VALUES, CONSOLE, print_board
 
 
 def main():

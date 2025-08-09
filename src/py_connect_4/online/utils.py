@@ -5,9 +5,8 @@ from typing import Any, Literal
 
 import numpy as np
 
-from connect_4.utils import Connect4Cells
+from py_connect_4.utils import Connect4Cells
 
-# TODO: these should be asked to the user
 HOST = "0.0.0.0"
 PORT = 65432
 

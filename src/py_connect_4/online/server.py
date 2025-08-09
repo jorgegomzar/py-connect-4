@@ -5,8 +5,8 @@ from typing import Iterator
 import numpy as np
 from loguru import logger
 
-from connect_4.online.utils import HOST, PORT, GameState, Player, recv, send
-from connect_4.utils import (
+from py_connect_4.online.utils import HOST, PORT, GameState, Player, recv, send
+from py_connect_4.utils import (
     CELL_DISPLAY_VALUES,
     COLS,
     ROWS,

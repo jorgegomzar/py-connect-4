@@ -1,19 +1,32 @@
 [project]
-name = "connect-4"
+name = "py-connect-4"
 version = "0.1.0"
-description = "Add your description here"
+description = "Play connect 4 in your terminal or online with your friends"
 readme = "README.md"
+authors = [
+    {name = "Jorge Gómez Zarzosa", email = "jorge.gomzar@bmat.com"},
+]
 requires-python = ">=3.13"
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Games/Entertainment",
+  "Topic :: Games/Entertainment :: Board Games",
+]
+include = [ "connect_4" ]
+
 dependencies = [
-    "ipdb>=0.13.13",
     "loguru>=0.7.3",
     "numpy>=2.0.2",
-    "pydantic>=2.11.7",
     "rich>=14.1.0",
 ]
 
 [project.scripts]
-connect-4 = "connect_4.main:main"
+py-connect-4 = "py_connect_4.main:main"
 
 [build-system]
 requires = ["uv_build>=0.8.6,<0.9.0"]

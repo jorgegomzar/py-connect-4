@@ -2,7 +2,7 @@ from itertools import cycle
 
 import numpy as np
 
-from connect_4.utils import (
+from py_connect_4.utils import (
     CELL_DISPLAY_VALUES,
     COLS,
     CONSOLE,
