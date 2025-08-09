@@ -1,4 +1,4 @@
-# connect 4
+# py-connect-4
 
 This is a simple Python script to play connect 4.
 
@@ -6,37 +6,67 @@ Uses rich to represent the board!
 
 Play locally OR online with your friends.
 
-## Locally
+## Installation
+
+- With uv (recommended)
 
 ```bash
-❯ uv run connect-4 local
+❯ uv tool install py-connect-4
+❯ py-connect-4 --help
+```
+
+Or simply run it via uvx
+
+```bash
+❯ uvx py-connect-4 --help
+```
+
+- With pip
+
+```bash
+❯ pip install py-connect-4
+❯ py-connect-4 --help
+```
+
+## Usage
+
+### Locally
+
+```bash
+❯ uvx py-connect-4 local
+❯ # or after installation via pip
+❯ py-connect-4 local
 ```
 Then play in turns in 1 shell prompt.
 
-## Online
+### Online
 
 One of you needs to spawn 2 processes to **HOST** and also **JOIN** the game:
 
 **Host**:
 
 ```bash
-❯ uv run connect-4 online host
+❯ uvx py-connect-4 online host
+❯ # or after installation via pip
+❯ py-connect-4 online host
 ```
 
 **Client**:
 
 ```bash
-❯ uv run connect-4 online join
+❯ uvx connect-4 online join
+❯ # or after installation via pip
+❯ py-connect-4 online join
 ```
 
 You'll be prompted to enter the HOST IP or fall back to "0.0.0.0"
 
-## Game example
+### Game example
 <details>
 <summary>This is an example for a local game</summary>
 
 ```bash
-❯ uv run connect-4 local
+❯ uvx py-connect-4 local
 ┏━━━┳━━━┳━━━┳━━━┳━━━┳━━━┳━━━┓
 ┃ 0 ┃ 1 ┃ 2 ┃ 3 ┃ 4 ┃ 5 ┃ 6 ┃
 ┡━━━╇━━━╇━━━╇━━━╇━━━╇━━━╇━━━┩
