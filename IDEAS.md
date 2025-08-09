@@ -1,0 +1,2 @@
+- [ ] Add "PVE" mode against an AI / bot
+- [ ] UI or Web UI

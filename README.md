@@ -2,9 +2,41 @@
 
 This is a simple Python script to play connect 4.
 
-Uses rich to represent the board.
+Uses rich to represent the board!
 
+Play locally OR online with your friends.
+
+## Locally
+
+```bash
+❯ uv run connect-4 local
 ```
+Then play in turns in 1 shell prompt.
+
+## Online
+
+One of you needs to spawn 2 processes to **HOST** and also **JOIN** the game:
+
+**Host**:
+
+```bash
+❯ uv run connect-4 online host
+```
+
+**Client**:
+
+```bash
+❯ uv run connect-4 online join
+```
+
+You'll be prompted to enter the HOST IP or fall back to "0.0.0.0"
+
+## Game example
+<details>
+<summary>This is an example for a local game</summary>
+
+```bash
+❯ uv run connect-4 local
 ┏━━━┳━━━┳━━━┳━━━┳━━━┳━━━┳━━━┓
 ┃ 0 ┃ 1 ┃ 2 ┃ 3 ┃ 4 ┃ 5 ┃ 6 ┃
 ┡━━━╇━━━╇━━━╇━━━╇━━━╇━━━╇━━━┩
@@ -341,6 +373,6 @@ Player 🔵. Col: 3
 │ 🔵 │ 🟠 │ 🔵 │ 🔵 │ 🔵 │ 🟠 │ 🟠 │
 └────┴────┴────┴────┴────┴────┴────┘
 WINNER IS PLAYER 🔵
-   ~/Documents/repos/personal/challenges/connect-4  master                      connect-4 3.9.20  13:34:02 
 ❯ 
 ```
+</details>
